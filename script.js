@@ -1,44 +1,49 @@
 // 1)
 var a = prompt("Enter a number.");
 var sum = 0;
+
 while (Number.isInteger(a) === false) {
-var a = Number(prompt("Please enter an integer."));
-if (Number.isInteger(a)===true) {
-  break;
+  a = Number(prompt("Please enter an integer."));
+  if (Number.isInteger(a)===true) {
+    break;
   }
 }
+
 for (var i=0; i<=a; i++) {
   sum = (sum + i);
 }
-  console.log(sum + " is " + a + "'s triangular number.");
+console.log(sum + " is " + a + "'s triangular number.");
+
+
 
 // 2)
- var result = "";
- var answer = prompt("Do you want to play?");
+var result = "";
+var answer = prompt("Do you want to play?");
 
-while(answer!="yes" && answer !="no")
-{
-    answer = prompt("Do you want to play? Please enter yes or no.");
+while(answer!="yes" && answer !="no") {
+  answer = prompt("Do you want to play? Please enter yes or no.");
 }
 do{
-  if(answer === "yes")
-  {
-  var result = result + " " + prompt("Enter a Word.");
-  answer = prompt("Do you want to play again?");
+  if(answer === "yes") {
+    var result = result + " " + prompt("Enter a Word.");
+    answer = prompt("Do you want to play again?");
   }
-  else if(answer === "no")
-  {
+  else if(answer === "no") {
     break;
   }
   else {
-      answer = prompt("Do you want to play? Please enter yes or no.");
+    answer = prompt("Do you want to play? Please enter yes or no.");
   }
 } while(answer != "no")
 console.log(result);
 
 
+
 //3
+var name = ("");
+var again = ("");
 var yesorno = prompt("Would you like to print your name?");
+
 if (yesorno != "yes") {
   console.log("Have a lovely day.");
 }
@@ -58,6 +63,7 @@ if (yesorno === "yes") {
 
 //4
 var time = prompt("What time of day is it?");
+
 while (time != "morning" || time != "noon" || time != "evening") {
   var time = prompt("What time of day is it?");
   if (time === "morning" || time=== "noon" || time=== "evening") {
