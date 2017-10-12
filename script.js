@@ -65,8 +65,8 @@ if (yesorno === "yes") {
 var time = prompt("What time of day is it?");
 
 while (time != "morning" || time != "noon" || time != "evening") {
-  var time = prompt("What time of day is it?");
-  if (time === "morning" || time=== "noon" || time=== "evening") {
+  time = prompt("What time of day is it?");
+  if (time === "morning" || time === "noon" || time=== "evening") {
     break;
   }
 }
