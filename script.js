@@ -13,28 +13,28 @@ for (var i=0; i<=a; i++) {
   console.log(sum + " is " + a + "'s triangular number.");
 
 // 2)
-var sentence = (" ");
-do {
-  var yesorno = prompt("Do you want to play?");
-  if (yesorno === "no") {
-    break;
-  }
-  while (yesorno != "yes" && yesorno != "no") {
-    var yesorno = prompt("Do you want to play? Enter yes or no.");
-    if (yesorno === "no") {
-      break;
-    }
-  }
-  if (yesorno === "yes") {
-    var wordtoadd = prompt("Enter a word.");
-    var sentence = (sentence + " " + wordtoadd);
-  }
-  else if (yesorno === "no") {
-    console.log(sentence)
-    break;
-  }
+ var result = "";
+ var answer = prompt("Do you want to play?");
+
+while(answer!="yes" && answer !="no")
+{
+    answer = prompt("Do you want to play? Please enter yes or no.");
 }
-while (yesorno = "yes");
+do{
+  if(answer === "yes")
+  {
+  var result = result + " " + prompt("Enter a Word.");
+  answer = prompt("Do you want to play again?");
+  }
+  else if(answer === "no")
+  {
+    break;
+  }
+  else {
+      answer = prompt("Do you want to play? Please enter yes or no.");
+  }
+} while(answer != "no")
+console.log(result);
 
 
 //3
