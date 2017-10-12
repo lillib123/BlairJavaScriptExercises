@@ -1,8 +1,8 @@
 // 1)
-var a = prompt("An nth Triangle Number is n + n+1. For example, with n=5, the triangular number would be 0+1+2+3+4+5, or 15. Enter a number to triangulate.");
+var a = prompt("Enter a number.");
 var sum = 0;
 while (Number.isInteger(a) === false) {
-var a = Number(prompt("Please enter an integer to triangulate."));
+var a = Number(prompt("Please enter an integer."));
 if (Number.isInteger(a)===true) {
   break;
   }
